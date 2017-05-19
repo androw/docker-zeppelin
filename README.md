@@ -1,0 +1,1 @@
+Link Spark master as spark_master
