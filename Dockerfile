@@ -2,7 +2,7 @@ FROM alpine
 
 MAINTAINER Nicolas Lorin <androw95220@gmail.com>
 
-RUN apk add --update openjdk14-jre curl bash && rm -rf /var/cache/apk/*
+RUN apk add --update openjdk11-jre curl bash && rm -rf /var/cache/apk/*
 
 RUN curl -s https://www-us.apache.org/dist/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz | tar -xz -C /usr/local/ && curl -s http://www-us.apache.org/dist/zeppelin/zeppelin-0.8.2/zeppelin-0.8.2-bin-all.tgz | tar -xz -C /usr/local/ 
 
